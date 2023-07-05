@@ -61,8 +61,8 @@ const promptUser = () => {
       const svgString = `
         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
           ${selectedShape.render()}
-          <text x="150" y="125" text-anchor="middle" fill="${textColor}">${text}</text>
-        </svg>
+          <text x="150" y="125" text-anchor="middle" fill="${textColor}" font-size="45">${text}</text>
+          </svg>
       `;
   
       fs.writeFileSync("logo.svg", svgString);
